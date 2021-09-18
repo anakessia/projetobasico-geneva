@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open sans', sans-serif;
+}
+
+.button{
+    background-color: rgb(143, 39, 39);
+    color: rgb(255, 253, 253);
+    display: inline-block;
+    padding: 10px 5px;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid rgb(255, 205, 205);
+    transition: .2s all;
+    text-decoration: none;
+}
+
+a:hover{
+    background: rgb(221, 205, 205);
+    color: rgb(95, 47, 47);
+    border: 1px solid rgb(139, 100, 100);
+
+}
+
+.video-section{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.banner{
+    position: relative;
+    height: 100vh;
+}
+
+.banner::after{
+    position: absolute;
+    content: "";
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+.banner-content h1{
+    font-size: 6vw;
+    color: rgb(255, 253, 253);
+    text-transform: capitalize;
+    line-height: 73px;
+    margin-bottom: 18px;
+    text-shadow: 3px 4px rgb(143, 39, 39);
+}
+
+.banner-content{
+    position: absolute;
+    left: 50%;
+    margin: auto;
+    content: "";
+    text-align: center;
+    top: 35%;
+    transform: translate(-55%);
+    z-index: 9;
+}
+
+.banner-content p{
+    color: rgb(255, 253, 253);
+    max-width: 710px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0px 33px;
+    font-size: 1em;
+    text-shadow: 1px 1px rgb(143, 39, 39);
+}
+
+@media (max-width: 750px){
+    .banner-content p{
+        width: 90vw;
+    }
+    .banner-content h1{
+        font-size: 9vw;
+        line-height: 53px;
+    }
+}
